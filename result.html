@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style2.css') }}" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('{{ background_image }}');
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <img src="{{ image_url }}" alt="Uploaded Image" class="img-fluid mb-3">
+                <div class="card">
+                    <h1>Prediction Result</h1>
+                    <div class="card-body">
+                        <p><strong>Predicted Class:</strong> {{ predicted_class }}</p>
+                        <p><strong>Condition:</strong> {{ condition }}</p>
+                        <a href="{{ url_for('index') }}" class="btn btn-primary btn-block">Go Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2024 Danish Syazani bin Mohd Zakir</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

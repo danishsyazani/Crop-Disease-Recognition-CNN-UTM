@@ -1,0 +1,7 @@
+How to run? 
+
+Running the testing in app.py
+
+The application will be served on port 8080 by default. You can access it at http://127.0.0.1:8080/.
+
+To stop the server to run needs to be in terminal then CRTL key + C in keyboard.

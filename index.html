@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Recognition</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body class="bg">
+    <div class="container">
+        <div class="card">
+            <h1>Crop Disease Recognition</h1>
+            <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="model">Select Model:</label>
+                    <select class="form-control" name="model" id="model">
+                        <option value="resnet50">ResNet50</option>
+                        <option value="vgg16">VGG16</option>
+                        <option value="efficientnet_b0">EfficientNet</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="file">Upload Image:</label>
+                    <input type="file" class="form-control-file" name="file" id="file" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Predict</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2024 Danish Syazani bin Mohd Zakir</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
