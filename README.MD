@@ -25,32 +25,6 @@ This research project aims to recognize crop diseases in Malaysian agriculture u
 
 The dataset used for this project is the PlantVillage dataset, credited to SP Mohanty. The dataset contains images of healthy and diseased plant leaves. The dataset can be found at [this link](https://github.com/spMohanty/PlantVillage-Dataset).
 
-## Project Structure
-
-The project is structured as follows:
-
-crop-disease-recognition-cnn/
-│
-├── Models/ # Contains the trained models
-│ ├── resnet50_best_model.pth
-│ ├── vgg16_best_model.pth
-│ └── efficientnet_b0_best_model.pth
-│
-├── static/
-│ └── uploads/ # Contains uploaded images for prediction
-│
-├── templates/
-│ ├── index.html # Home page for the web application
-│ └── result.html # Results page for the web application
-│
-├── Preprocessing_Data.ipynb # Notebook for data preprocessing
-├── Model_Training_ResNet-50.ipynb # Notebook for training ResNet-50 model
-├── Model_Training_VGG-16.ipynb # Notebook for training VGG-16 model
-├── Model_Training_EfficientNet.ipynb # Notebook for training EfficientNet model
-├── Evaluation_Model.ipynb # Notebook for model evaluation
-├── app.py # Flask web application
-└── requirements.txt # List of required packages
-
 ## Preprocessing
 
 The data preprocessing involves:
